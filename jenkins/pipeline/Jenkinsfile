@@ -1,4 +1,4 @@
-node('maven') {
+node {
 stage 'build'
 openshiftBuild(buildConfig: 'nodejs-mongodb-example', showBuildLogs: 'true')
 stage 'deploy'
